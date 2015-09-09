@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.MArtDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#000080</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+</resources>

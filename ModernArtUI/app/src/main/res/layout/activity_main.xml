@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff000000"
+    android:id="@+id/rootLayout">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="326dp"
+            android:id="@+id/orangeRectangle"
+            android:background="#ffff9820" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:id="@+id/blueRectangle"
+            android:background="#ff2624b6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:id="@+id/greyRectangle"
+            android:background="#ffc4c4c5"
+            android:layout_weight="0.11" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:weightSum="1"
+        android:paddingTop="5dp"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:id="@+id/purpleRectangle"
+            android:background="#ff771da3"
+            android:layout_weight="7.10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignLeft="@+id/linearLayout4"
+        android:layout_alignStart="@+id/linearLayout4"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:paddingTop="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="6sp"
+            android:layout_height="match_parent"
+            android:id="@+id/leftWhiteRectangle"
+            android:layout_weight="0.33"
+            android:background="#fffffdfd"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="6sp"
+            android:layout_height="match_parent"
+            android:id="@+id/redRectangle"
+            android:layout_weight="0.33"
+            android:background="#ffff3939"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rightWhiteRectangle"
+            android:layout_weight="0.34"
+            android:background="#fffffdfd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="5dp">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/colorSlider"
+            android:indeterminate="false"
+            android:focusableInTouchMode="false" />
+    </LinearLayout>
+
+</RelativeLayout>
